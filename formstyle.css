@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/*---------Reset CSS--------*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+:focus{
+	outline:none;
+}
+button, input{
+	border:none;
+}
+/*----------Group Selectors-------*/
+body, a, button{
+	font-size:0.6em;
+	font-family:"Lucinda Grande", sans-serif;
+	color:rgb(177,169,164);
+	
+}
+.sign_in .checkbox+label,.sign_in .checkbox+label+span,  .sign_in label:not(.checkbox~label, .sign_in_checkbox~label), .sign_up label{
+	font-size: 0.7em;
+	color: rgb(177,169,164);
+}
+/*------Sign_In and Sign_Up Lists Styles--------*/
+.formwrapper{
+	background-color:rgb(79,81,117);
+	width:300px;
+	padding:40px 30px;
+	border-radius:5px;
+	margin-top:10px;
+	position: relative;
+	min-height: 24.5em;
+}
+.formwrapper:after{
+	content: "";
+	position: absolute;
+	width: 300px;
+	min-height: 24.5em;
+	left: 300px;
+	top: 0;
+	background: #F7F7F7FF;
+
+}
+.formwrapper:before{
+	content: "";
+	position: absolute;
+	width: 300px;
+	height: 370px;
+	left: -300px;
+	top: 0;
+	background-color: white;
+	z-index: 3;
+	background: #F7F7F7FF;
+}
+.formwrapper .sign_in_checkbox+label{
+	display: inline-block;
+	margin-bottom:30px;
+	cursor: pointer;
+}
+.formwrapper .sign_in li, .formwrapper .sign_up li{
+  margin-bottom:15px;
+}
+.formwrapper .sign_in li:nth-of-type(2), .formwrapper .sign_in li:nth-of-type(3){
+	margin-bottom: 20px;
+}
+
+/*-------Sign-in header styles--------*/
+.sign_in_checkbox{
+	display:none;
+}
+.sign_in_checkbox+label{
+	position:relative;
+	font-size:0.8em;
+	color:white;
+	padding-bottom:5px;
+	border-bottom:2px solid rgb(50,54,241);
+}
+.sign_in_checkbox+label:before{ 
+    content:"SIGN UP";
+    position:absolute;
+    left:60px;
+    width:53.5px;
+    color:rgb(177,169,164);
+    transition:0.5s;
+}
+.sign_in_checkbox:checked+label:before{ 
+    color:white;
+ 	border-bottom:2px solid rgb(50,54,241); 
+ 	padding-bottom:5px;  
+}
+.sign_in_checkbox:checked+label{ 
+    color:rgb(177,169,164);
+ 	border:none;   
+}
+.sign_in_checkbox:checked~.sign_in{ 
+    left: -300px;
+    top: 90px; 
+}
+.sign_in_checkbox:checked~.sign_up{ 
+ 	visibility: visible;
+ 	left: 30px;
+}
+
+/*-------SignIn Form styles--------*/
+.sign_in{
+	position: absolute;
+    left: 30px;
+    top: 90px;
+    transition:0.5s;
+}
+.sign_in label:not(.checkbox~label, .sign_in_checkbox~label){
+	display:block;
+	margin-left:10px;
+	margin-bottom:5px;
+}
+.sign_in input:not([type="checkbox"]){
+	width:240px;
+	padding:5px;
+	border-radius: 15px;
+	background-color:rgb(108,109,139);
+}
+.sign_in .form1{
+	margin-top: 2em;
+}
+/*-------SignIn CheckBox styles--------*/
+.sign_in .checkbox{
+	display:none;
+}
+.sign_in .checkbox+label{
+	position:relative;
+	margin-left:40px;
+	margin-right:25px;
+	color:rgb(200,201,211);
+	cursor: pointer;
+}
+.sign_in .checkbox+label:before{
+	position:absolute;
+	content:"";
+	top:3px;
+	right:22px;
+	width:9px;
+	height:8px;
+	border-radius:60%;
+	background-color:rgb(200,201,211);
+    z-index:2;
+    transition:0.5s;
+}
+.sign_in .checkbox+label:after{
+	position:absolute;
+	content:"";
+	width:50px;
+	height:20px;
+	background-color:rgba(108,109,139, 0.5);
+	top:-3px;
+	right:-10px;
+	border-radius:15px;
+}
+.sign_in .checkbox+label>.yes{
+	position: absolute;
+	left: -32px;
+    top: 2px;
+	display: none;
+}
+.sign_in .checkbox+label>.no{
+	position: absolute;
+	left: -13px;
+    top: 2px;
+}
+.sign_in .checkbox:checked+label:before{
+	right:-2px;
+}
+.sign_in .checkbox:checked+label>.no{
+	display: none;
+}
+.sign_in .checkbox:checked+label>.yes{
+	display: inline-block;
+	color:white;
+	font-weight: bold;
+	z-index:2;
+}
+.sign_in .checkbox:checked+label:after{
+	background-color:rgb(50,54,241)
+}
+
+/*-------SignIn Button and Link styles--------*/
+.sign_in button{
+	width:240px;
+	background-color:rgb(50,54,241);
+	padding:6px;
+	color:white;
+	font-weight: bold;
+	border-radius:15px;
+	margin-bottom:15px;
+	cursor: pointer;
+}
+.sign_in a{
+	display:block;
+	text-align:center;
+	border-top:0.5px solid rgb(177,169,164);
+	padding-top:15px;
+	margin-bottom:10px;
+}
+
+/*-------Sign_Up Form styles--------*/
+.sign_up{
+	visibility: hidden;
+	position: absolute;
+    left: 300px;
+    top: 90px;
+    transition:0.5s;
+}
+.sign_up label{
+	display:block;
+	margin-left:10px;
+	margin-bottom:5px;
+}
+.sign_up input{
+	width:240px;
+	padding:5px;
+	border-radius: 15px;
+	background-color:rgb(108,109,139);
+}
+.sign_up button{
+	width:240px;
+	background-color:rgb(50,54,241);
+	padding:6px;
+	color:white;
+	border-radius:15px;
+	margin-top:13px;
+	cursor: pointer;
+}

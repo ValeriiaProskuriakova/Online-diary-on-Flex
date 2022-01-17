@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="../NewsApp/fontawesome/css/all.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="logo"><span>Website Logo</span></section>
+        <nav>
+            <ul>
+                <li><a href="#about">Mindfulness</a></li>
+                <li><a href="#yoga">Yoga</a></li>
+                <li><a href="#meditation">Meditations</a></li>
+                <li><a href="#diary">Diary</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <figure class="header_background">
+        <div class="shadow"></div>
+    </figure>
+    <section class="description">
+        <h1>Retreat for your mind</h1>
+        <p>Practice mindfulness every day</p>
+        <iframe src="https://www.youtube.com/embed/ZToicYcHIOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <main>
+        <div class="work_wrapper">
+            <article class="work" id="about">
+                <section class="work_header">
+                    <h3>What is mindfulness ?</h3>
+                    <p>Mindfulness is the basic human ability to be fully present, aware of where we are and what we’re doing, and not overly reactive or overwhelmed by what’s going on around us.
+                    While mindfulness is something we all naturally possess, it’s more readily available to us when we practice on a daily basis.
+                    Whenever you bring awareness to what you’re directly experiencing via your senses, or to your state of mind via your thoughts and emotions, you’re being mindful. And there’s growing research showing that when you train your brain to be mindful, you’re actually remodeling the physical structure of your brain.</p>
+                    <hr>
+                    <h3>Start your practice with yoga</h3>
+                </section>
+                
+                <section class="images" id="yoga">
+                    <iframe  class="full_width" src="https://www.youtube.com/embed/XN3JB67-a_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/41_j1bkP0sc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe  src="https://www.youtube.com/embed/b1H3xO3x_Js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/LqXZ628YNj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </article>
+        </div>
+        <div class="features_wrapper" id="meditation">
+            <article class="features">
+                <section class="features_header">
+                    <h3>Meditate in three steps</h3>
+                    <p>Gently work with your wandering mind whenever you feel anxious or distracted. Mindfulness is available to us in every moment, so use three minutes of your time right now to unwind and rest your mind on your breath.</p>
+                    <hr>
+                </section>
+                <section class="features_items">
+                    <section class="photo">
+                        <i class="fas fa-chair"></i>
+                        <p>Settle</p>
+                        <p>Settle into your seat. Begin by taking a seat, or if necessary, standing. The important thing is to feel where your body is touching the seat and touching the ground.</p>
+                    </section>
+                    <section class="web">
+                        <i class="fas fa-binoculars"></i>
+                        <p>Scan the body</p>
+                        <p>Sense where your bottom is touching the seat. Sit up straight or stand straight but not stiff. Make sure your feet are completely touching the ground, connecting you to the earth. Your eyes are open, so take in the surroundings of where you are. Lower your gaze slightly.</p>
+                    </section>
+                    <section class="content">
+                        <i class="fas fa-lungs"></i>
+                        <p>Connect with the breath</p>
+                        <p>Pay light attention to your breath as it goes out. At the end of the out-breath, let there be a gap while the in-breath is happening. And in that gap you have natural awareness: it’s there already, you don’t have to create it. So, follow the breath out, and out, and out. As thoughts arise, treat them as you would anything else you encounter: Notice it, and use that noticing to bring you back to the out-breath and ride it out. Out, and out, and out.</p>
+                    </section>
+                </section>
+            </article>
+        </div>
+        <div class="diary_wrapper" id="diary">
+            <article class="diary">
+                    <h3>Write down your thoughts</h3>
+                    <div class="diary_intro">
+                        <p>Use this diary daily to track your thoughts and feelings you experienced during meditation, which is a mindful practice. Make a note every day, save it and check your diary weekly / monthly to see which kind of thoughts dominate your mind..</p>
+                    </div>
+                    <form>
+                        <textarea></textarea>
+                        <div class="diary_buttons">
+                            <button type="submit">SAVE</button>
+                            <button type="submit">CHECK YOUR DIARY</button>
+                        </div>
+                    </form>
+            </article>
+        </div>
+        <div class="newsletter_wrapper" id="login">
+            <article class="newsletter">
+                    <section class="newsletter_header">
+                        <h3>Log In</h3>
+                        <p>If you don't have an account, sign up in order to use our diary to track your thoughts mindfully.</p>
+                        <hr>
+                    </section>
+
+                        <div class="formwrapper">
+                            <input type="checkbox" name="sign_in_checkbox" class="sign_in_checkbox" id="sign_in_checkbox" value="OK">
+                                <label for="sign_in_checkbox">SIGN IN</label>
+                                <form class="sign_in" action="#" method="post" name="sign_in_form">
+                                <ul>
+                                    <div class="form1">
+                                       <li>
+                                        <label for="username">USERNAME</label>
+                                        <input type="text" name="username">
+                                       </li>
+                                       <li>
+                                        <label for="password">PASSWORD</label>
+                                        <input type="password" name="password">
+                                       </li>    
+
+                                       <li>
+                                           <button type="submit">SIGN IN</button>
+                                       </li>
+                                    </div>
+                               </ul>
+                            </form>
+                            <form class="sign_up" action="#" method="post" name="sign_up_form">
+                            <ul>
+                                <li>
+                                    <label for="fullname">FULL NAME</label>
+                                    <input type="text" name="fullname">
+                                </li>
+                                    <li>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" name="email">
+                                </li>   
+                                    <li>
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" name="password">
+                                </li> 
+                                    <li>
+                                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                                    <input type="password" name="confirm_password">
+                                </li> 
+                                <li>
+                                    <button type="submit">SIGN UP</button>
+                                </li>
+                            </ul>
+                            </form>
+                    </div>
+
+            </article>
+        </div>
+    </main>
+    <footer>
+        <section class="footer_wrap">
+            <section class="footer_icons">
+                <ul>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-snapchat-square"></i></li>
+                    <li><i class="fab fa-pinterest-square"></i></li>
+                    <li><i class="fab fa-github-square"></i></li>
+                </ul>
+             </section>
+             <section class="footer_text">
+                <p>MADE BY TUTORIALZINE.IMAGES COURTESY TO UNSPLASH</p>
+                <p>NO ATTRIBUTES REQUIRED. YOU CAN REMOVE THIS FOOTER</p>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>

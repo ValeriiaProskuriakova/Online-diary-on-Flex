@@ -1,0 +1,443 @@
+@import"formstyle.css";
+
+        *{
+    		margin:0;
+    		padding:0;
+    		box-sizing:border-box;
+    	}
+    	ul{
+    		list-style:none;
+    	}
+        :focus{
+            outline: none;
+        }
+    	a{
+    		text-decoration:none;
+    		color:black;
+            cursor: pointer;
+            display:block;
+            text-align:center;
+    	}
+        button{
+            border: none;
+            cursor: pointer;
+        }
+    	body{
+            font-family: 'Roboto', sans-serif;
+            font-size:1em;
+    		display:flex;
+    		flex-direction:column;
+    	}
+
+/*------Group Selectors-------*/
+main .work_wrapper, main .features_wrapper, main .diary_wrapper, main .newsletter_wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:4em 0;
+}
+main .features_wrapper, main .newsletter_wrapper{
+    background: #F7F7F7FF;
+}
+main .work, main .features, main .diary, main .newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    max-width:72em;
+}
+main .features .features_header hr, main .work .work_header hr, main .newsletter .newsletter_header hr{
+    width: 8em;
+    background-color: #2397F2FF;
+    border:none;
+    height:2px;
+}
+main .work .work_header h3, main .features .features_header h3, main .diary h3, main .newsletter .newsletter_header h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+main .features .features_header p, main .work .work_header p, main .newsletter .newsletter_header p{
+    text-align: center;
+    max-width: 40em;
+    font-size: 0.9em;
+    line-height: 2;
+    color: #7F7C7EFF;
+    font-weight: bold;
+}
+main .features .features_header, main .work .work_header, main .newsletter .newsletter_header{
+    display: flex;
+    flex-direction: column;
+    height: 10em;
+    justify-content: space-between;
+    align-items: center;
+}
+.description button, main .newsletter button, main .diary button{
+    width: 17em;
+    min-height: 4em;
+    background-color: #2791E6FF;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*-------Header Styles-------*/
+header{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    position:absolute;
+    z-index:2;
+    min-height:5em;
+    align-items: center;
+    left:0;
+    right:0;
+    top:0;
+}
+
+header .logo{
+    width: 19em;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+header nav{
+    font-size:1.2em;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 35em;
+}
+header nav a{
+    color: white;
+    font-size: 1em;
+}
+
+
+/*-------Header Background Styles-----*/
+.header_background{
+    min-height:100vh;
+    background:url(./img/Webp.net-resizeimage.jpg) no-repeat center/cover;
+    position:relative;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+.header_background .shadow{
+    background-color:rgba(61,61,61,.5);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+/*-------Description Styles-----*/
+ .description{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+.description h1{
+    font-size: 2em;
+    margin-bottom: .5em;
+    text-align:center;
+}
+.description p{
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.description iframe{
+    width:33em;
+    height:16em;
+}
+/*-------Main Work Styles-------*/
+
+main{
+    width:100%;
+    color: #42494EFF;
+}
+main .work{
+    min-height: 70em;
+}
+main .work .work_header{
+    min-height:25em;
+}
+main .work .images{
+    display: flex;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    margin:1em;
+}
+main iframe{
+    width: 20em;
+    height: 18em;
+    flex: auto;
+    margin: .5em;
+}
+main .full_width{
+    width: 40em;
+}
+
+/*--------Main Features Styles------*/
+main .features{
+    min-height:47em;
+}
+
+main .features .features_items{
+    display:flex;
+    flex-direction:row;
+    max-width:72em;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+}
+main .features .features_items .photo, main .features .features_items .web, main .features .features_items .content{
+    text-align:center;
+    width:20em;
+    display:flex;
+    flex-direction:column;
+    min-height:18em;
+    justify-content: flex-start;
+    flex:auto;
+    margin:2em;
+}
+main .features .features_items i{
+    color:#2397F2FF;
+    font-size:3em;
+    min-height:1.5em;
+}
+main .features .features_items section p:first-of-type{
+    font-size:1.5em;
+    font-weight:bold;
+    min-height:2em;
+}
+main .features .features_items section p:last-of-type{
+    line-height:2;
+    color: #7F7C7EFF;
+}
+
+/*--------Main Reviews Style-------*/
+main .diary{
+    min-height:30em;
+}
+
+main .diary .diary_intro{
+    max-width:40em;
+    font-size:1.2em;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin:0 2em;
+}
+main .diary p:first-of-type{
+    color: #7F7C7EFF;
+    font-size:1.1em;
+    margin-bottom:1.4em;
+}
+main .diary p:nth-of-type(2){
+    color: #7F7C7EFF;
+    font-size:0.9em;
+}
+main .diary form{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    max-width: 40em;
+    height: 19em;
+}
+main .diary textarea{
+    height:17em;
+    border:2px solid lightblue;
+}
+main .diary_buttons{
+    display:flex;
+    justify-content:space-between;
+    width:33em;
+    font-size: 1.2em;
+}
+/*--------Main NewsLetter Style-------*/
+main .newsletter {
+    min-height:37em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+}
+main .newsletter_wrapper{
+    min-height:45em;
+}
+main .newsletter .newsletter_email{
+    display:flex;
+    max-width:55em;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+main .newsletter button{
+    flex:auto;
+    margin:1em;
+    width: 13em;
+}
+/*--------Footer Style-------*/
+footer{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    min-height:14em;
+    background-color:rgb(66,74,80);
+}
+footer .footer_wrap{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:center;
+    min-height:7em;
+}
+footer .footer_text{
+    color:rgb(160,160,162);
+    display:flex;
+    flex-direction:column;
+    min-height:3em;
+    justify-content:space-between;
+    align-items:center;
+}
+footer .footer_icons{
+    color:rgb(233,233,233);
+    font-size:2.2em;
+    display:flex;
+    justify-content: center;
+}
+footer .footer_icons ul{
+    display:flex;
+    justify-content: space-between;
+    width:6.5em;
+}
+
+/*-------Media Queries------*/
+
+@media all and (max-width:1200px){
+    body{
+        font-size:0.8em;
+    }
+    header{
+        padding:0 2em;
+        
+    }
+    main .features .features_items .content{
+        min-height:12em;
+    }
+}
+
+@media all and (max-width:900px){
+    body{
+        font-size:0.7em;
+    }
+    .description button, .newsletter .newsletter_email button{
+        font-size:1em;
+    }
+    main .newsletter{
+        max-width:35em;
+        min-height:24em;
+        padding:4em 0;
+    }
+    main .newsletter [type="email"]{
+        height:3em;
+    }
+}
+
+@media all and (max-width:768px){
+    header{
+        padding:2em 3em; 
+    }
+    header, .description{
+        font-size:0.9em;
+    }
+    .description h1{
+        font-size:2.8em;
+    }
+    main .features_wrapper{
+        padding:6em 0;
+    }
+    main .features .features_header{
+        margin-bottom:3em;
+    }
+    main .features .features_items .photo, main .features .features_items .web, main .features .features_items .content{
+        min-height:15em;
+    }
+    .description button, main .diary button{
+        width:13em;
+    }
+    main .diary form{
+        height:25em;
+    }
+    main .diary textarea{
+        height:15em;
+    }
+
+}
+
+@media all and (max-width:500px){
+    body{
+        font-size:0.6em;
+    }
+    header{
+        font-size:1em;
+    }
+    header nav ul{
+        width:20em;
+    }
+    header .logo{
+        font-size:1.2em;
+    }
+    main .reviews_wrapper, main .newsletter_wrapper{
+        padding:2em 0;
+    }
+main .work, main .features, main .reviews, main .newsletter{
+    max-width:30em;
+}
+    main .newsletter .newsletter_email {
+        max-width:35em;
+    }
+    main .reviews{
+        min-height:45em;
+        padding:3em 0;
+    }
+    .description button, main .diary button{
+        padding:0.5em;
+        font-size:1em;
+    }
+    main .diary textarea{
+        height:14em;
+    }  
+    .description iframe{
+        width:45em;
+        height:30em;
+    } 
+
+}
+@media all and (max-width:320px){
+    body{
+        font-size:0.5em;
+    }
+}
+
+
+
+
+
