@@ -1,3 +1,4 @@
 # Retreat
-Website for tracking thoughts 
-Made on Flex layout 
+<pre>
+Responsive layout based on Flexbox for an online diary
+</pre>
