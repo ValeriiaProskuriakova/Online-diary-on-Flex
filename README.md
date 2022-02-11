@@ -1,4 +1,5 @@
 # Retreat
 <pre>
-Responsive layout based on Flexbox for an online diary
+Responsive web page based on Flexbox layout for an online diary
+Form switcher made with pure CSS 
 </pre>
