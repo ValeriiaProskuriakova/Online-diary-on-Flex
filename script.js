@@ -3,12 +3,14 @@ window. scrollTo(0, 0);
 let diaryText = document.querySelector('.diaryText')
 let buttonSave = document.querySelector('.diary_buttons_save')
 let buttonLogin = document.querySelector('.login_button')
+let buttonDiary = document.querySelector('.diary_button')
 let formLogin = document.querySelector('.sign_in')
 let formRegister = document.querySelector('.sign_up')
 let loggedIn = false
 //let currentUser;
 
 buttonLogin.innerHTML = 'Login'
+
 
 function saveDiaryText(text) {
     buttonSave.addEventListener('click', ()=> {
@@ -85,7 +87,7 @@ function register(form){
 function logout(button){
     button.addEventListener('click', () => {
         loggedIn = false;
-        buttonLogin.innerHTML = 'login'
+        buttonLogin.innerHTML = 'Login'
         showDiary()
 
     })
@@ -112,3 +114,12 @@ register(formRegister)
 login(formLogin)
 showDiary()
 logout(buttonLogin)
+
+buttonDiary.addEventListener('click', () => {
+    if(loggedIn){
+        buttonDiary.setAttribute('href', '#diary')
+    }
+    else{
+        buttonDiary.setAttribute('href', '#login')
+    }
+})
