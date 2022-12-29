@@ -19,7 +19,7 @@
                 <li><a href="#yoga">Yoga</a></li>
                 <li><a href="#meditation">Meditations</a></li>
                 <li><a href="#diary">Diary</a></li>
-                <li><a href="#login">Login</a></li>
+                <li><a href="#login" class="login_button"></a></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +45,7 @@
                 </section>
 
                 <section class="images" id="yoga">
-                    <iframe  class="full_width" src="https://www.youtube.com/embed/XN3JB67-a_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe  class="full_width" src="https://www.youtube.com/embed/p8oxM5j9eNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/41_j1bkP0sc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe  src="https://www.youtube.com/embed/b1H3xO3x_Js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe src="https://www.youtube.com/embed/LqXZ628YNj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -85,17 +85,17 @@
                         <p>Use this diary daily to track your thoughts and feelings you experienced during meditation, which is a mindful practice. Make a note every day, save it and check your diary weekly / monthly to see which kind of thoughts dominate your mind..</p>
                     </div>
                     <form>
-                        <textarea></textarea>
+                        <textarea class="diary_text"></textarea>
                         <div class="diary_buttons">
-                            <button type="submit">SAVE</button>
+                            <button type="submit" class="diary_buttons_save">SAVE</button>
                             <button type="submit">CHECK YOUR DIARY</button>
                         </div>
                     </form>
             </article>
         </div>
-        <div class="newsletter_wrapper" id="login">
-            <article class="newsletter">
-                    <section class="newsletter_header">
+        <div class="login_wrapper" id="login">
+            <article class="login">
+                    <section class="login_header">
                         <h3>Log In</h3>
                         <p>If you don't have an account, sign up in order to use our diary to track your thoughts mindfully.</p>
                         <hr>
@@ -108,12 +108,12 @@
                                 <ul>
                                     <div class="form1">
                                        <li>
-                                        <label for="username">USERNAME</label>
-                                        <input type="text" name="username">
+                                        <label for="username">EMAIL</label>
+                                        <input type="text" name="email" id="loginEmail">
                                        </li>
                                        <li>
                                         <label for="password">PASSWORD</label>
-                                        <input type="password" name="password">
+                                        <input type="password" name="password" id="loginPassword">
                                        </li>
 
                                        <li>
@@ -126,15 +126,15 @@
                             <ul>
                                 <li>
                                     <label for="fullname">FULL NAME</label>
-                                    <input type="text" name="fullname">
+                                    <input type="text" name="fullname" id="fullname" required>
                                 </li>
                                     <li>
                                     <label for="email">EMAIL</label>
-                                    <input type="email" name="email">
+                                    <input type="email" name="email" id="registerEmail" required>
                                 </li>
                                     <li>
                                     <label for="password">PASSWORD</label>
-                                    <input type="password" name="password">
+                                    <input type="password" name="password" id="registerPassword" required>
                                 </li>
                                     <li>
                                     <label for="confirm_password">CONFIRM PASSWORD</label>
@@ -162,8 +162,7 @@
                 </ul>
              </section>
              <section class="footer_text">
-                <p>MADE BY TUTORIALZINE.IMAGES COURTESY TO UNSPLASH</p>
-                <p>NO ATTRIBUTES REQUIRED. YOU CAN REMOVE THIS FOOTER</p>
+                <p>KEEP CALM AND DO YOGA</p>
             </section>
         </section>
     </footer>

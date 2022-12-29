@@ -30,35 +30,35 @@
     	}
 
 /*------Group Selectors-------*/
-main .work_wrapper, main .features_wrapper, main .diary_wrapper, main .newsletter_wrapper{
+main .work_wrapper, main .features_wrapper, main .diary_wrapper, main .login_wrapper{
     width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
     padding:4em 0;
 }
-main .features_wrapper, main .newsletter_wrapper{
+main .features_wrapper, main .login_wrapper{
     background: #F7F7F7FF;
 }
-main .work, main .features, main .diary, main .newsletter{
+main .work, main .features, main .diary, main .login{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items:center;
     max-width:72em;
 }
-main .features .features_header hr, main .work .work_header hr, main .newsletter .newsletter_header hr{
+main .features .features_header hr, main .work .work_header hr, main .login .login_header hr{
     width: 8em;
     background-color: #2397F2FF;
     border:none;
     height:2px;
 }
-main .work .work_header h3, main .features .features_header h3, main .diary h3, main .newsletter .newsletter_header h3{
+main .work .work_header h3, main .features .features_header h3, main .diary h3, main .login .login_header h3{
     text-align: center;
     font-weight: bold;
     font-size: 2em;
 }
-main .features .features_header p, main .work .work_header p, main .newsletter .newsletter_header p{
+main .features .features_header p, main .work .work_header p, main .login .login_header p{
     text-align: center;
     max-width: 40em;
     font-size: 0.9em;
@@ -66,14 +66,14 @@ main .features .features_header p, main .work .work_header p, main .newsletter .
     color: #7F7C7EFF;
     font-weight: bold;
 }
-main .features .features_header, main .work .work_header, main .newsletter .newsletter_header{
+main .features .features_header, main .work .work_header, main .login .login_header{
     display: flex;
     flex-direction: column;
     height: 10em;
     justify-content: space-between;
     align-items: center;
 }
-.description button, main .newsletter button, main .diary button{
+.description button, main .login button, main .diary button{
     width: 17em;
     min-height: 4em;
     background-color: #2791E6FF;
@@ -241,7 +241,7 @@ main .diary .diary_intro{
     display:flex;
     flex-direction:column;
     justify-content: space-between;
-    margin:0 2em;
+    margin: 0.5em 2em 0;
 }
 main .diary p:first-of-type{
     color: #7F7C7EFF;
@@ -257,11 +257,15 @@ main .diary form{
     flex-direction:column;
     justify-content:space-between;
     max-width: 40em;
-    height: 19em;
+    height: 24em;
 }
 main .diary textarea{
-    height:17em;
+    height:15.5em;
     border:2px solid lightblue;
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    color: #7F7C7EFF;
+    padding: 0.4em;
 }
 main .diary_buttons{
     display:flex;
@@ -269,18 +273,18 @@ main .diary_buttons{
     width:33em;
     font-size: 1.2em;
 }
-/*--------Main NewsLetter Style-------*/
-main .newsletter {
+/*--------Main Login Style-------*/
+main .login {
     min-height:37em;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
 }
-main .newsletter_wrapper{
+main .login_wrapper{
     min-height:45em;
 }
-main .newsletter .newsletter_email{
+main .login .login_email{
     display:flex;
     max-width:55em;
     justify-content:space-between;
@@ -288,7 +292,7 @@ main .newsletter .newsletter_email{
     flex-wrap:wrap;
 }
 
-main .newsletter button{
+main .login button{
     flex:auto;
     margin:1em;
     width: 13em;
@@ -348,15 +352,15 @@ footer .footer_icons ul{
     body{
         font-size:0.7em;
     }
-    .description button, .newsletter .newsletter_email button{
+    .description button, .login .login_email button{
         font-size:1em;
     }
-    main .newsletter{
+    main .login{
         max-width:35em;
         min-height:24em;
         padding:4em 0;
     }
-    main .newsletter [type="email"]{
+    main .login [type="email"]{
         height:3em;
     }
 }
@@ -405,13 +409,13 @@ footer .footer_icons ul{
     header .logo{
         font-size:1.2em;
     }
-    main .reviews_wrapper, main .newsletter_wrapper{
+    main .reviews_wrapper, main .login_wrapper{
         padding:2em 0;
     }
-main .work, main .features, main .reviews, main .newsletter{
+main .work, main .features, main .reviews, main .login{
     max-width:30em;
 }
-    main .newsletter .newsletter_email {
+    main .login .login_email {
         max-width:35em;
     }
     main .reviews{
@@ -437,6 +441,13 @@ main .work, main .features, main .reviews, main .newsletter{
     }
 }
 
+
+.open{
+    display:flex;
+}
+.close{
+    display:none;
+}
 
 
 
